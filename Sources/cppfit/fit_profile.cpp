@@ -651,6 +651,7 @@ static const Profile::FIELD sessionFields[] =
 { 0, 0, "jump_count", "", (FIT_FLOAT64)1, (FIT_FLOAT64)0, 0, 0, 183, 132, false, Profile::Type::Uint16 },
 { 0, 0, "avg_grit", "kGrit", (FIT_FLOAT64)1, (FIT_FLOAT64)0, 0, 0, 186, 136, false, Profile::Type::Float32 },
 { 0, 0, "avg_flow", "Flow", (FIT_FLOAT64)1, (FIT_FLOAT64)0, 0, 0, 187, 136, false, Profile::Type::Float32 },
+{ 0, 0, "resting_calories", "kcal", (FIT_FLOAT64)1, (FIT_FLOAT64)0, 0, 0, 196, 132, false, Profile::Type::Uint16 },
 { 0, 0, "total_fractional_ascent", "m", (FIT_FLOAT64)100, (FIT_FLOAT64)0, 0, 0, 199, 2, false, Profile::Type::Uint8 },
 { 0, 0, "total_fractional_descent", "m", (FIT_FLOAT64)100, (FIT_FLOAT64)0, 0, 0, 200, 2, false, Profile::Type::Uint8 },
 { 0, 0, "avg_core_temperature", "C", (FIT_FLOAT64)100, (FIT_FLOAT64)0, 0, 0, 208, 132, false, Profile::Type::Uint16 },

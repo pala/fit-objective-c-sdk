@@ -323,7 +323,25 @@
 
 - (void)setTotalCalories:(FITUInt16)totalCalories {
     [super setFieldUINT16ValueForField:11 andValue:(totalCalories) forIndex:0 andSubFieldIndex:FIT_SUBFIELD_INDEX_MAIN_FIELD];
-} 
+}
+
+// RestingCalories
+- (BOOL)isRestingCaloriesValid {
+    const fit::Field* field = [super getField:196];
+    if( FIT_NULL == field ) {
+        return FALSE;
+    }
+
+    return field->IsValueValid() == FIT_TRUE ? TRUE : FALSE;
+}
+
+- (FITUInt16)getRestingCalories {
+    return ([super getFieldUINT16ValueForField:196 forIndex:0 andSubFieldIndex:FIT_SUBFIELD_INDEX_MAIN_FIELD]);
+}
+
+- (void)setRestingCalories:(FITUInt16)restingCalories {
+    [super setFieldUINT16ValueForField:196 andValue:(restingCalories) forIndex:0 andSubFieldIndex:FIT_SUBFIELD_INDEX_MAIN_FIELD];
+}
 
 // TotalFatCalories 
 - (BOOL)isTotalFatCaloriesValid {

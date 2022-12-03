@@ -83,6 +83,10 @@ NS_ASSUME_NONNULL_BEGIN
 - (BOOL)isTotalCaloriesValid;
 - (FITUInt16)getTotalCalories;
 - (void)setTotalCalories:(FITUInt16)totalCalories;
+// RestingCalories
+- (BOOL)isRestingCaloriesValid;
+- (FITUInt16)getRestingCalories;
+- (void)setRestingCalories:(FITUInt16)restingCalories;
 // TotalFatCalories 
 - (BOOL)isTotalFatCaloriesValid;
 - (FITUInt16)getTotalFatCalories;
